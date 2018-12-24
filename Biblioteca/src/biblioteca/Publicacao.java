@@ -1,4 +1,5 @@
 package biblioteca;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public abstract class Publicacao {
 	}
 
 	public void addAutor(Autor aut) {
-		if (autores.size() <= limiteAutor) {
+		if (autores.size() <= limiteAutor){
 			autores.add(aut);
 			System.out.println("Adicionado Autor ");
 		} else {
@@ -35,6 +36,20 @@ public abstract class Publicacao {
 		} else {
 			throw new ErroExpeption("Limite ");
 
+		}
+	}
+	
+	public void imprimiAutor() {
+		for(Autor autor: autores) {
+			System.out.println(" "+autor.getNome()+ " "+autor.getTitulacao());
+		}
+			
+	}
+	
+	public void imprimiReferencia() {
+		for (Publicacao publicacao: referencia) {
+			System.out.println(" "+publicacao.getDataPublicacao()+publicacao.getTituloPublicacao());
+			
 		}
 	}
 

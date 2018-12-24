@@ -13,7 +13,6 @@ public class Livro extends Publicacao {
 		this.isbn = isbn;
 	}
 
-	
 	public int getNumeroEdicao() {
 		return numeroEdicao;
 	}

@@ -24,6 +24,8 @@ public class Biblioteca {
 			throw new ErroExpeption ("Limite ");
 		}
 	}
+	
+	
 
 	public String getNome() {
 		return nome;
