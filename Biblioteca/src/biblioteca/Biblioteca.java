@@ -18,14 +18,12 @@ public class Biblioteca {
 	}
 
 	public void addPublicacao(Publicacao publicacao) {
-		if(publi.size() <= limitePubli) {
+		if (publi.size() <= limitePubli) {
 			publi.add(publicacao);
-		}else {
-			throw new ErroExpeption ("Limite ");
+		} else {
+			throw new ErroExpeption("Limite ");
 		}
 	}
-	
-	
 
 	public String getNome() {
 		return nome;

@@ -19,6 +19,7 @@ public class Main {
 		a1.imprimiAutor();
 		a1.imprimiReferencia();
 		System.out.println("\t Resumo:" + a1.getResumo());
+		
 
 //	Livro l1 = new Livro("43/45/1234", "Café", 34, "CAP", 45);
 //	Autor oliveira = new Autor("Oliveira", TitulacaoAutorEnum.MESTRADO);
